@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preise – ImmoSiegel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-badge">✦</span>
+      <span class="logo-text">ImmoSiegel<sup>®</sup></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="preise.html" class="active">Preise</a></li>
+      <li><a href="investoren.html">Für Investoren</a></li>
+      <li><a href="kontakt.html" class="btn-nav">Kontakt</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Startseite</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="preise.html">Preise</a>
+    <a href="investoren.html">Für Investoren</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80" alt="Preise"/>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="page-hero-content">
+    <span class="eyebrow light">Transparent & fair</span>
+    <h1>Unsere Preise</h1>
+    <p>Investieren Sie einmalig oder profitieren Sie langfristig vom Abo – Sie haben die Wahl.</p>
+  </div>
+</section>
+
+<!-- PREISE EIGENTÜMER -->
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Für Eigentümer</span>
+    <h2>Einfamilienhaus & Eigentumswohnung</h2>
+    <p class="section-intro">Wählen Sie zwischen einer einmaligen Zahlung oder dem Abo mit dauerhaftem Zugang zur Plattform.</p>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-badge">Einmalig</div>
+        <h3>ImmoSiegel Basis</h3>
+        <div class="price">
+          <span class="price-num">499 €</span>
+          <span class="price-period">einmalig</span>
+        </div>
+        <ul class="pricing-features">
+          <li>✓ Vollständige Unterlagenmappe</li>
+          <li>✓ Offizielle Immobilienbewertung</li>
+          <li>✓ Energieausweis</li>
+          <li>✓ Grundbuchauszug</li>
+          <li>✓ Amtliche Flurkarte</li>
+          <li>✓ Wohnflächenberechnung</li>
+          <li>✓ Baupläne & Baulasten</li>
+          <li>✓ Altlastenauskunft</li>
+          <li>✓ Digitales ImmoSiegel</li>
+          <li class="disabled">✗ Dauerhafter Plattform-Zugang</li>
+        </ul>
+        <a href="kontakt.html" class="btn-outline">Jetzt anfragen</a>
+      </div>
+
+      <div class="pricing-card featured">
+        <div class="pricing-badge popular">Empfohlen</div>
+        <h3>ImmoSiegel Premium</h3>
+        <div class="price">
+          <span class="price-num">399 €</span>
+          <span class="price-period">einmalig</span>
+        </div>
+        <div class="price-abo">+ <strong>7,99 €</strong> / Monat</div>
+        <ul class="pricing-features">
+          <li>✓ Vollständige Unterlagenmappe</li>
+          <li>✓ Offizielle Immobilienbewertung</li>
+          <li>✓ Energieausweis</li>
+          <li>✓ Grundbuchauszug</li>
+          <li>✓ Amtliche Flurkarte</li>
+          <li>✓ Wohnflächenberechnung</li>
+          <li>✓ Baupläne & Baulasten</li>
+          <li>✓ Altlastenauskunft</li>
+          <li>✓ Digitales ImmoSiegel</li>
+          <li>✓ <strong>Dauerhafter Plattform-Zugang</strong></li>
+          <li>✓ <strong>Modernisierungen jederzeit eintragen</strong></li>
+        </ul>
+        <a href="kontakt.html" class="btn-primary">Jetzt anfragen</a>
+        <p class="pricing-note">Monatlich kündbar. Keine versteckten Kosten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE MFH -->
+<section class="section bg-dark">
+  <div class="container">
+    <span class="eyebrow light">Für Mehrfamilienhausbesitzer</span>
+    <h2 class="light">Mehrfamilienhaus & Kapitalanlage</h2>
+    <p class="section-intro light">Gleiche Leistungen wie beim Einfamilienhaus – plus die Möglichkeit, Ihre Immobilie anonym auf unserer Plattform anzubieten und Gebote von qualifizierten Investoren zu erhalten.</p>
+
+    <div class="pricing-grid">
+      <div class="pricing-card dark">
+        <div class="pricing-badge">Einmalig</div>
+        <h3>MFH Basis</h3>
+        <div class="price">
+          <span class="price-num">499 €</span>
+          <span class="price-period">einmalig</span>
+        </div>
+        <ul class="pricing-features">
+          <li>✓ Alle Basis-Leistungen</li>
+          <li>✓ Bewertung Mehrfamilienhaus</li>
+          <li>✓ Vollständige Unterlagenmappe</li>
+          <li>✓ Digitales ImmoSiegel</li>
+          <li class="disabled">✗ Anonymes Inserieren</li>
+          <li class="disabled">✗ Investorengebote empfangen</li>
+        </ul>
+        <a href="kontakt.html" class="btn-outline-light">Jetzt anfragen</a>
+      </div>
+
+      <div class="pricing-card featured dark-featured">
+        <div class="pricing-badge popular">Empfohlen</div>
+        <h3>MFH Premium</h3>
+        <div class="price">
+          <span class="price-num">399 €</span>
+          <span class="price-period">einmalig</span>
+        </div>
+        <div class="price-abo">+ <strong>7,99 €</strong> / Monat</div>
+        <ul class="pricing-features">
+          <li>✓ Alle Basis-Leistungen</li>
+          <li>✓ Bewertung Mehrfamilienhaus</li>
+          <li>✓ Vollständige Unterlagenmappe</li>
+          <li>✓ Digitales ImmoSiegel</li>
+          <li>✓ <strong>Dauerhafter Plattform-Zugang</strong></li>
+          <li>✓ <strong>Anonymes Inserieren</strong></li>
+          <li>✓ <strong>Investorengebote empfangen</strong></li>
+          <li>✓ <strong>Direktkontakt zu Investoren</strong></li>
+        </ul>
+        <a href="kontakt.html" class="btn-primary">Jetzt anfragen</a>
+      </div>
+    </div>
+
+    <!-- Provision -->
+    <div class="provision-box">
+      <h3>Provision im Erfolgsfall</h3>
+      <div class="provision-grid">
+        <div class="provision-item">
+          <span class="prov-num">1,5 %</span>
+          <span class="prov-label">Eigentümerprovision<br/><small>inkl. MwSt. beim erfolgreichen Verkauf</small></span>
+        </div>
+        <div class="prov-divider"></div>
+        <div class="provision-item">
+          <span class="prov-num">3 %</span>
+          <span class="prov-label">Investorenprovision<br/><small>bei erfolgreichem Kauf einer Immobilie</small></span>
+        </div>
+      </div>
+      <p class="provision-note">Die Provision fällt nur im Erfolgsfall an. Es entstehen keine weiteren Kosten.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTOREN ABO -->
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Für Investoren</span>
+    <h2>Zugang zur Investorenplattform</h2>
+    <p class="section-intro">Als registrierter Investor erhalten Sie Zugang zu anonymen Immobilienangeboten von Mehrfamilienhauseigentümern – und können direkt Gebote abgeben.</p>
+    <div class="investor-pricing">
+      <div class="pricing-card investor-card">
+        <div class="pricing-badge">Monatlich</div>
+        <h3>Investoren-Mitgliedschaft</h3>
+        <div class="price">
+          <span class="price-num">8,99 €</span>
+          <span class="price-period">/ Monat</span>
+        </div>
+        <ul class="pricing-features">
+          <li>✓ Zugang zu allen anonymen Inseraten</li>
+          <li>✓ Gebote auf Immobilien abgeben</li>
+          <li>✓ Direktkontakt nach Eigentümer-Freigabe</li>
+          <li>✓ Vollständige Unterlagenmappe einsehen</li>
+          <li>✓ Marktpreise & Bewertungen</li>
+          <li>✓ Monatlich kündbar</li>
+        </ul>
+        <a href="investoren.html" class="btn-primary">Mehr erfahren</a>
+        <p class="pricing-note">+ 3 % Provision bei erfolgreichem Kauf</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-light">
+  <div class="container">
+    <span class="eyebrow">Häufige Fragen</span>
+    <h2>FAQ zu unseren Preisen</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Kann ich das Abo jederzeit kündigen? <span>+</span></button>
+        <div class="faq-a"><p>Ja, das Abo ist monatlich kündbar. Es gibt keine Mindestlaufzeit nach dem ersten Monat.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Was passiert mit meinen Daten nach einer Kündigung? <span>+</span></button>
+        <div class="faq-a"><p>Ihre Unterlagen bleiben 12 Monate nach Kündigung in Ihrem Konto abrufbar. Danach werden sie gemäß unserer Datenschutzrichtlinie gelöscht oder auf Wunsch exportiert.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Sind alle Behördengebühren im Preis enthalten? <span>+</span></button>
+        <div class="faq-a"><p>Die Servicegebühr von 399 € / 499 € beinhaltet unsere Dienstleistung. Behördengebühren (z. B. für den Grundbuchauszug oder die Flurkarte) werden nach Aufwand separat in Rechnung gestellt und vorab kommuniziert.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Wie lange dauert die Erstellung des ImmoSiegels? <span>+</span></button>
+        <div class="faq-a"><p>In der Regel dauert der gesamte Prozess 2–4 Wochen, abhängig von den Bearbeitungszeiten der zuständigen Behörden.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-badge">✦</span>
+      <span class="logo-text">ImmoSiegel<sup>®</sup></span>
+      <p>Das Qualitätssiegel für Ihre Immobilie – transparent, geprüft, wertvoll.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <a href="index.html">Startseite</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="preise.html">Preise</a>
+      <a href="investoren.html">Für Investoren</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="footer-links">
+      <h4>Rechtliches</h4>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Kontakt</h4>
+      <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cda4a3aba28da4a0a0a2bea4a8aaa8a1e3a9a8">[email&#160;protected]</a></p>
+      <p>+49 (0) 30 – 000 000 00</p>
+      <p>Mo–Fr: 9–18 Uhr</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>©

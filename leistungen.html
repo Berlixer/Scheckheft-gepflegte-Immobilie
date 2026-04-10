@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leistungen – ImmoSiegel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-badge">✦</span>
+      <span class="logo-text">ImmoSiegel<sup>®</sup></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="leistungen.html" class="active">Leistungen</a></li>
+      <li><a href="preise.html">Preise</a></li>
+      <li><a href="investoren.html">Für Investoren</a></li>
+      <li><a href="kontakt.html" class="btn-nav">Kontakt</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Startseite</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="preise.html">Preise</a>
+    <a href="investoren.html">Für Investoren</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1600&q=80" alt="Leistungen"/>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="page-hero-content">
+    <span class="eyebrow light">Was wir bieten</span>
+    <h1>Unsere Leistungen</h1>
+    <p>Alles aus einer Hand – von der Unterlagenbeschaffung bis zum offiziellen Siegel.</p>
+  </div>
+</section>
+
+<!-- LEISTUNGEN DETAIL -->
+<section class="section container">
+  <span class="eyebrow">Unterlagen & Dokumente</span>
+  <h2>Wir kümmern uns um alles</h2>
+  <p class="section-intro">Vergessen Sie den Papierkram. Wir beschaffen, prüfen und digitalisieren alle relevanten Unterlagen Ihrer Immobilie – zuverlässig und rechtssicher.</p>
+
+  <div class="leistung-list">
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">📋</div>
+      <div class="leistung-text">
+        <h3>Energieausweis</h3>
+        <p>Der Energieausweis ist gesetzlich vorgeschrieben und für jeden Verkauf oder jede Vermietung unverzichtbar. Wir beauftragen einen zertifizierten Energieberater, der den Bedarf- oder Verbrauchsausweis für Ihre Immobilie erstellt.</p>
+      </div>
+    </div>
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">📜</div>
+      <div class="leistung-text">
+        <h3>Grundbuchauszug</h3>
+        <p>Wir beantragen den aktuellen Grundbuchauszug beim zuständigen Amtsgericht. Alle Abteilungen – Eigentümer, Lasten und Beschränkungen sowie Hypotheken und Grundschulden – werden vollständig dokumentiert.</p>
+      </div>
+    </div>
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">🗺️</div>
+      <div class="leistung-text">
+        <h3>Amtliche Flurkarte</h3>
+        <p>Die aktuelle Flurkarte (Liegenschaftskarte) wird direkt beim zuständigen Kataster- und Vermessungsamt beschafft. Sie zeigt Lage, Grenzen und Flächenangaben Ihres Grundstücks rechtsverbindlich.</p>
+      </div>
+    </div>
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">📐</div>
+      <div class="leistung-text">
+        <h3>Wohnflächenberechnung</h3>
+        <p>Eine normgerechte Wohnflächenberechnung nach der Wohnflächenverordnung (WoFlV) ist Grundlage jeder seriösen Bewertung. Wir erstellen diese mit einem zertifizierten Sachverständigen – präzise und anerkannt.</p>
+      </div>
+    </div>
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">🏗️</div>
+      <div class="leistung-text">
+        <h3>Baupläne</h3>
+        <p>Wir beschaffen vorhandene Baupläne bei der zuständigen Baubehörde. Sollten keine vorliegen, koordinieren wir die Erstellung aktueller Grundrisse und Schnittzeichnungen durch einen Architekten.</p>
+      </div>
+    </div>
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">⛔</div>
+      <div class="leistung-text">
+        <h3>Baulasten</h3>
+        <p>Eingetragene Baulasten können den Wert und die Nutzbarkeit einer Immobilie erheblich beeinflussen. Wir holen eine vollständige Baulastenauskunft beim Baulastenverzeichnis ein und dokumentieren alle Einträge.</p>
+      </div>
+    </div>
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">☣️</div>
+      <div class="leistung-text">
+        <h3>Altlasten</h3>
+        <p>Eine Altlastenauskunft beim zuständigen Bodenschutzamt gibt Auskunft über mögliche Bodenverunreinigungen oder Altablagerungen. Diese Auskunft ist ein wichtiger Bestandteil des ImmoSiegel-Dossiers.</p>
+      </div>
+    </div>
+
+    <div class="leistung-item">
+      <div class="leistung-icon-wrap">🔧</div>
+      <div class="leistung-text">
+        <h3>Modernisierungsmaßnahmen</h3>
+        <p>Dokumentierte Modernisierungen – von neuen Fenstern über Dachsanierungen bis hin zu Heizungsanlagen – steigern den Wert Ihrer Immobilie erheblich. Wir erfassen alle Maßnahmen mit Nachweisen und Rechnungen und pflegen diese kontinuierlich in Ihr digitales Scheckheft ein.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROZESS -->
+<section class="section bg-light">
+  <div class="container">
+    <span class="eyebrow">So einfach geht's</span>
+    <h2>Ihr Weg zum ImmoSiegel</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h3>Anfrage stellen</h3>
+        <p>Füllen Sie unser Kontaktformular aus. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h3>Unterlagen beschaffen</h3>
+        <p>Unser Team kümmert sich um die Beschaffung aller benötigten Unterlagen – ohne Aufwand für Sie.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h3>Bewertung & Prüfung</h3>
+        <p>Ein zertifizierter Sachverständiger bewertet Ihre Immobilie. Alle Unterlagen werden geprüft und zusammengestellt.</p>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h3>Siegel erhalten</h3>
+        <p>Sie erhalten Ihr digitales ImmoSiegel, Zugang zu Ihrer persönlichen Immobilien-Plattform und – auf Wunsch – ein physisches Zertifikat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM -->
+<section class="section">
+  <div class="container two-col">
+    <div class="intro-text">
+      <span class="eyebrow">Die Plattform</span>
+      <h2>Ihr digitales Immobilien-Cockpit</h2>
+      <p>Mit dem Abo-Modell erhalten Sie dauerhaften Zugang zu Ihrer persönlichen Plattform. Hier können Sie:</p>
+      <ul class="check-list">
+        <li>✓ Alle Unterlagen jederzeit abrufen</li>
+        <li>✓ Neue Modernisierungen eintragen</li>
+        <li>✓ Sanierungsmaßnahmen dokumentieren</li>
+        <li>✓ Den Wert Ihrer Immobilie aktuell halten</li>
+        <li>✓ Für MFH: Anonym inserieren & Gebote erhalten</li>
+      </ul>
+      <a href="preise.html" class="btn-primary">Zu den Preisen</a>
+    </div>
+    <div class="intro-visual">
+      <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=80" alt="Digitale Plattform" class="intro-img"/>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-badge">✦</span>
+      <span class="logo-text">ImmoSiegel<sup>®</sup></span>
+      <p>Das Qualitätssiegel für Ihre Immobilie – transparent, geprüft, wertvoll.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <a href="index.html">Startseite</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="preise.html">Preise</a>
+      <a href="investoren.html">Für Investoren</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="footer-links">
+      <h4>Rechtliches</h4>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Kontakt</h4>
+      <p>info@immosiegel.de</p>
+      <p>+49 (0) 30 – 000 000 00</p>
+      <p>Mo–Fr: 9–18 Uhr</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 ImmoSiegel GmbH · Alle Rechte vorbehalten</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

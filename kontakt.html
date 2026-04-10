@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt – ImmoSiegel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-badge">✦</span>
+      <span class="logo-text">ImmoSiegel<sup>®</sup></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="preise.html">Preise</a></li>
+      <li><a href="investoren.html">Für Investoren</a></li>
+      <li><a href="kontakt.html" class="btn-nav active">Kontakt</a></li>
+    </ul>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Startseite</a>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="preise.html">Preise</a>
+    <a href="investoren.html">Für Investoren</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero short-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80" alt="Kontakt"/>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="page-hero-content">
+    <span class="eyebrow light">Wir freuen uns auf Sie</span>
+    <h1>Kontakt</h1>
+    <p>Stellen Sie uns Ihre Fragen – wir antworten innerhalb von 24 Stunden.</p>
+  </div>
+</section>
+
+<!-- KONTAKT SECTION -->
+<section class="section">
+  <div class="container kontakt-layout">
+
+    <!-- FORM -->
+    <div class="kontakt-form-wrap">
+      <h2>Schreiben Sie uns</h2>
+      <p class="form-intro">Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.</p>
+
+      <div class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vorname">Vorname *</label>
+            <input type="text" id="vorname" placeholder="Max" required />
+          </div>
+          <div class="form-group">
+            <label for="nachname">Nachname *</label>
+            <input type="text" id="nachname" placeholder="Mustermann" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail-Adresse *</label>
+          <input type="email" id="email" placeholder="max@mustermann.de" required />
+        </div>
+        <div class="form-group">
+          <label for="telefon">Telefonnummer</label>
+          <input type="tel" id="telefon" placeholder="+49 (0) 30 – 000 000 00" />
+        </div>
+        <div class="form-group">
+          <label for="interesse">Ich interessiere mich für *</label>
+          <select id="interesse" required>
+            <option value="">– Bitte wählen –</option>
+            <option value="efh">ImmoSiegel – Einfamilienhaus / ETW</option>
+            <option value="mfh">ImmoSiegel – Mehrfamilienhaus</option>
+            <option value="investor">Investoren-Mitgliedschaft</option>
+            <option value="sonstiges">Sonstiges</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nachricht">Ihre Nachricht *</label>
+          <textarea id="nachricht" rows="5" placeholder="Beschreiben Sie kurz Ihre Immobilie oder Ihr Anliegen..." required></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="datenschutz" required />
+            <span>Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden. *</span>
+          </label>
+        </div>
+        <button type="button" class="btn-primary btn-full" onclick="submitForm()">Nachricht senden</button>
+        <p class="form-note">* Pflichtfelder. Wir antworten innerhalb von 24 Stunden.</p>
+      </div>
+
+      <div class="form-success" id="formSuccess" style="display:none;">
+        <div class="success-icon">✓</div>
+        <h3>Vielen Dank!</h3>
+        <p>Ihre Nachricht ist bei uns eingegangen. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+      </div>
+    </div>
+
+    <!-- KONTAKT INFO -->
+    <div class="kontakt-info">
+      <h2>Direkt erreichen</h2>
+      <div class="info-card">
+        <div class="info-icon">📧</div>
+        <div>
+          <h4>E-Mail</h4>
+          <a href="mailto:info@immosiegel.de">info@immosiegel.de</a>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">📞</div>
+        <div>
+          <h4>Telefon</h4>
+          <a href="tel:+493000000000">+49 (0) 30 – 000 000 00</a>
+          <p class="info-sub">Mo–Fr: 9:00 – 18:00 Uhr</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4>Adresse</h4>
+          <p>ImmoSiegel GmbH<br/>Musterstraße 1<br/>10115 Berlin</p>
+        </div>
+      </div>
+
+      <div class="partner-box">
+        <h4>Unsere Partner</h4>
+        <p>Wir arbeiten anerkannte Institutionen des deutschen Immobilienmarkts:</p>
+        <div class="partner-logos">
+          <div class="partner-logo-item">
+            <span class="partner-icon">🏛️</span>
+            <span>IVD<br/><small>Immobilienverband Deutschland</small></span>
+          </div>
+          <div class="partner-logo-item">
+            <span class="partner-icon">🔬</span>
+            <span>TÜV<br/><small>Technischer Überwachungsverein</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section class="map-section">
+  <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="Berlin Karte" class="map-img"/>
+  <div class="map-overlay">
+    <div class="map-badge">
+      <span>✦</span>
+      <strong>ImmoSiegel GmbH</strong>
+      <span>Berlin, Deutschland</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-badge">✦</span>
+      <span class="logo-text">ImmoSiegel<sup>®</sup></span>
+      <p>Das Qualitätssiegel für Ihre Immobilie – transparent, geprüft, wertvoll.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <a href="index.html">Startseite</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="preise.html">Preise</a>
+      <a href="investoren.html">Für Investoren</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="footer-links">
+      <h4>Rechtliches</h4>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Kontakt</h4>
+      <p>info@immosiegel.de</p>
+      <p>+49 (0) 30 – 000 000 00</p>
+      <p>Mo–Fr: 9–18 Uhr</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 ImmoSiegel GmbH · Alle Rechte vorbehalten</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
